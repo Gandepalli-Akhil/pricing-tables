@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing Table</title>
+    <style>
+       body{
+        height:100vh;
+        width:100vw;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1eaea;
+        gap:50px;
+       }
+       .plan1{
+        display: flex;
+        flex-direction: column;
+        height:500px;
+        width:500px;
+        background-color:white;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function:ease-in-out;
+        transition-delay: 0s;
+       }
+       .plan2{
+        display: flex;
+        flex-direction: column;
+        height:500px;
+        width:500px;
+        background-color: rgb(5, 243, 243);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function:ease-in-out;
+        transition-delay: 0s;
+       }
+       .plan3{
+        display: flex;
+        flex-direction: column;
+        height:500px;
+        width:500px;
+        background-color:rgb(253, 215, 4);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function:ease-in-out;
+        transition-delay: 0s;
+       }
+       .inner-plan1,.inner-plan2,.inner-plan3{
+        margin-left: 15px;
+       }
+       .heading{
+        font-size:40px;
+       }
+       .price{
+        font-size:30px;
+       }
+       .features{
+        font-size:25px ;
+       }
+       .Actual-features{
+        font-size: 20px;
+       }
+       #click{
+        border-radius:15px;
+        background-color: antiquewhite;
+        margin-left:33%;
+        font-size:20px;
+       }
+       #click:hover{
+        background-color:green;
+        color:white;
+       }
+       .plan1,.plan2,.plan3{
+        padding: 20px;
+       }
+       .plan1:hover,.plan2:hover,.plan3:hover{
+        transform:scale(1.1);
+       }
+    </style>
+</head>
+<body>
+    <div class="plan1">
+        <form action="plan1-submit.html" target="_blank">
+        <div class="inner-plan1">
+        <h1 class="heading">Plan1: BASIC</h1>
+        <p class="price">price: $0 / Month</p>
+        <h3 class="features">Features:</h3>
+        <p class="Actual-features">1.Access to portfolio projects</p>
+        <p class="Actual-features">2.Basic support via email</p>
+        <p class="Actual-features">3.Limited customization options</p>
+        <input type="submit" value="Get Started" id="click">
+         </form>
+    </div>
+    </div>
+    <div class="plan2">
+        <form action="plan-2submit.html" target="_blank">
+          <div class="inner-plan2">
+         <h1 class="heading">Plan2: STANDARD</h1>
+        <p class="price">price: $15/ Month</p>
+        <h3 class="features">Features:</h3>
+        <p class="Actual-features">1.Everything in Basic</p>
+        <p class="Actual-features">2.Priority support</p>
+        <p class="Actual-features">3.Full access to project templates</p>
+        <p class="Actual-features">4.Can request minor customization</p>
+         <input type="submit"  value="Get Started" id="click">
+         </form>
+    </div>
+    </div>
+    <div class="plan3">
+         <form action="plan-3submit.html" target="_blank">
+        <div class="inner-plan3">
+         <h1 class="heading">Plan3: PREMIUM</h1>
+        <p class="price">price: $30 / Month</p>
+        <h3 class="features">Features:</h3>
+        <p class="Actual-features">1.Everything in standard</p>
+        <p class="Actual-features">2.Personalized project review</p>
+        <p class="Actual-features">3.Advanced templates and Resources</p>
+        <input type="submit"  value="Get Started" id="click">
+        </form>
+    </div>
+    </div>
+</body>
+</html>
